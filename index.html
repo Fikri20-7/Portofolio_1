@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ashabul Fikri - 3D Digital Artist specializing in immersive 3D visuals, character sculpting, and cinematic environments.">
+    <title>FIKRI — 3D Digital Artist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+</head>
+<body>
+
+    <!-- ========================= NAVBAR ========================= -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="navbar__logo" id="logo-link">FIKRI</a>
+            <ul class="navbar__links" id="nav-links">
+                <li><a href="#" class="active" data-page="home" id="nav-home">Home</a></li>
+                <li><a href="#" data-page="projects" id="nav-projects">Projects</a></li>
+                <li><a href="#" data-page="contact" id="nav-contact">Contact</a></li>
+                <li><a href="#" class="navbar__resume" id="nav-resume">Resume</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+                <!-- Sun icon (shown in dark mode) -->
+                <svg class="theme-toggle__sun theme-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"/>
+                    <line x1="12" y1="1" x2="12" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="23"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/>
+                    <line x1="21" y1="12" x2="23" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+                <!-- Moon icon (shown in light mode) -->
+                <svg class="theme-toggle__moon theme-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
+            <button class="navbar__toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========================= HOME PAGE ========================= -->
+    <main class="page active" id="page-home">
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Immersive 3D Visuals &amp;<br>Digital Art.
+                    </h1>
+                    <p class="hero__description">
+                        Specializing in high-fidelity 3D rendering, character sculpting, and cinematic environments. I craft digital worlds with precise lighting and composition, bringing imagination to life through stunning visuals.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#" class="btn btn--outline" data-page="projects" id="btn-view-work">View Work</a>
+                        <button class="btn btn--filled" id="btn-showreel">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/>
+                            </svg>
+                            Watch Showreel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Showreel Section -->
+        <section class="showreel">
+            <div class="container">
+                <div class="showreel__wrapper animate-on-scroll" id="showreel-wrapper">
+                    <video id="showreel-video" class="showreel__video" preload="metadata" loop playsinline poster="assets/images/cloud-fortress.png">
+                        <source src="assets/videos/Arcane_Project_1---2.mp4" type="video/mp4">
+                    </video>
+                    <div class="showreel__overlay" id="showreel-overlay">
+                        <div class="showreel__play">
+                            <svg viewBox="0 0 24 24">
+                                <polygon points="8,5 19,12 8,19"/>
+                            </svg>
+                        </div>
+                        <span class="showreel__label">Play 2024 Showreel</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Projects Section -->
+        <section class="selected-projects">
+            <div class="container">
+                <h2 class="section__title animate-on-scroll">Selected Projects</h2>
+                <div class="projects-grid">
+
+                    <!-- Project Card 1 -->
+                    <article class="project-card animate-on-scroll" id="project-cloud-fortress">
+                        <div class="project-card__image-wrapper">
+                            <img src="assets/images/cloud-fortress.png" alt="Cloud Fortress - 3D Environment Render" class="project-card__image">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__header">
+                                <h3 class="project-card__title">Cloud Fortress</h3>
+                                <span class="project-card__arrow">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                        <polyline points="12 5 19 12 12 19"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <p class="project-card__description">
+                                Massive sci-fi fortress emerging through volumetric clouds with fighter jet squadron flyby, featuring realistic atmospheric scattering and hard-surface modeling.
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="tag">Blender</span>
+                                <span class="tag">Cycles</span>
+                                <span class="tag">Environment Design</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="project-card animate-on-scroll" id="project-shuttle">
+                        <div class="project-card__image-wrapper">
+                            <img src="assets/images/space-shuttle.jpg" alt="Space Shuttle Model - 3D Product Render" class="project-card__image">
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__header">
+                                <h3 class="project-card__title">Space Shuttle Model</h3>
+                                <span class="project-card__arrow">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                        <polyline points="12 5 19 12 12 19"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <p class="project-card__description">
+                                Detailed NASA Space Shuttle miniature on a bookshelf, featuring realistic materials, depth of field bokeh, and warm interior lighting.
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="tag">Blender</span>
+                                <span class="tag">Cycles</span>
+                                <span class="tag">Product Viz</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================= PROJECTS PAGE ========================= -->
+    <main class="page" id="page-projects">
+        <section class="projects-page">
+            <div class="container">
+
+                <div class="projects-page__header animate-on-scroll">
+                    <h1 class="projects-page__title">Featured Renders &amp; Animations</h1>
+                    <p class="projects-page__subtitle">
+                        A curated collection of digital products, focusing on complex interfaces, robust engineering, and seamless user experiences.
+                    </p>
+                </div>
+
+                <div class="featured-projects">
+
+                    <!-- Featured Card 1 - Large -->
+                    <article class="featured-card featured-card--large animate-on-scroll" id="featured-cloud-fortress">
+                        <img src="assets/images/cloud-fortress.png" alt="Cloud Fortress - Sci-Fi 3D Environment" class="featured-card__image">
+                        <div class="featured-card__overlay">
+                            <div class="featured-card__tags">
+                                <span class="featured-tag">Blender</span>
+                                <span class="featured-tag">Cycles</span>
+                            </div>
+                            <h2 class="featured-card__title">Cloud Fortress</h2>
+                            <p class="featured-card__description">
+                                Sci-fi fortress rising above the clouds with fighter jets on patrol, volumetric cloud simulation, and cinematic atmospheric effects.
+                            </p>
+                            <a href="#" class="featured-card__link">
+                                High-Res Render
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                    <polyline points="12 5 19 12 12 19"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Two cards row -->
+                    <div class="featured-cards-row">
+
+                        <!-- Featured Card 2 -->
+                        <article class="featured-card featured-card--medium animate-on-scroll" id="featured-desk">
+                            <img src="assets/images/desk-setup.png" alt="Desk Setup - 3D Product Visualization" class="featured-card__image">
+                            <div class="featured-card__overlay">
+                                <div class="featured-card__tags">
+                                    <span class="featured-tag">Blender</span>
+                                    <span class="featured-tag">Product Viz</span>
+                                </div>
+                                <h2 class="featured-card__title">Desk Setup</h2>
+                                <p class="featured-card__description">
+                                    Cozy workspace scene with macro keypad, globe lamp, and laptop on wooden desk, warm moody lighting and realistic PBR materials.
+                                </p>
+                                <a href="#" class="featured-card__link">
+                                    View Process →
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Featured Card 3 -->
+                        <article class="featured-card featured-card--medium animate-on-scroll" id="featured-retro">
+                            <img src="assets/images/retro-room.png" alt="Retro Room - 3D Interior Render" class="featured-card__image">
+                            <div class="featured-card__overlay">
+                                <div class="featured-card__tags">
+                                    <span class="featured-tag">Blender</span>
+                                    <span class="featured-tag">Interior</span>
+                                </div>
+                                <h2 class="featured-card__title">Retro Living Room</h2>
+                                <p class="featured-card__description">
+                                    Nostalgic vintage room with CRT television, natural window lighting with dust particles, and realistic wood panel textures.
+                                </p>
+                                <a href="#" class="featured-card__link">
+                                    High-Res Render →
+                                </a>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <!-- Featured Card 4 - Large -->
+                    <article class="featured-card featured-card--large animate-on-scroll" id="featured-laundromat">
+                        <img src="assets/images/laundromat.jpg" alt="Laundromat - 3D Interior Render" class="featured-card__image">
+                        <div class="featured-card__overlay">
+                            <div class="featured-card__tags">
+                                <span class="featured-tag">Blender</span>
+                                <span class="featured-tag">Interior</span>
+                            </div>
+                            <h2 class="featured-card__title">The Laundromat</h2>
+                            <p class="featured-card__description">
+                                Photorealistic interior render of a laundromat with fluorescent lighting, tiled flooring, rows of washing machines, and atmospheric perspective.
+                            </p>
+                            <a href="#" class="featured-card__link">
+                                View Process →
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Video Gallery -->
+                <div class="video-gallery animate-on-scroll">
+                    <h2 class="section__title" style="margin-top: 80px;">Video Showreels</h2>
+                    <div class="video-grid">
+
+                        <!-- Video 1 -->
+                        <div class="video-card" id="video-card-1">
+                            <div class="video-card__wrapper">
+                                <video class="video-card__player" preload="metadata" loop playsinline>
+                                    <source src="assets/videos/Arcane_Project_1---2.mp4" type="video/mp4">
+                                </video>
+                                <div class="video-card__overlay">
+                                    <div class="showreel__play">
+                                        <svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="video-card__title">Arcane Project</h3>
+                        </div>
+
+                        <!-- Video 2 -->
+                        <div class="video-card" id="video-card-2">
+                            <div class="video-card__wrapper">
+                                <video class="video-card__player" preload="metadata" loop playsinline>
+                                    <source src="assets/videos/Porsche 911 RWB 1---2.mp4" type="video/mp4">
+                                </video>
+                                <div class="video-card__overlay">
+                                    <div class="showreel__play">
+                                        <svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="video-card__title">Porsche 911 RWB</h3>
+                        </div>
+
+                        <!-- Video 3 -->
+                        <div class="video-card" id="video-card-3">
+                            <div class="video-card__wrapper">
+                                <video class="video-card__player" preload="metadata" loop playsinline>
+                                    <source src="assets/videos/Pot 1---1.mp4" type="video/mp4">
+                                </video>
+                                <div class="video-card__overlay">
+                                    <div class="showreel__play">
+                                        <svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="video-card__title">Pot Render</h3>
+                        </div>
+
+                        <!-- Video 4 -->
+                        <div class="video-card" id="video-card-4">
+                            <div class="video-card__wrapper">
+                                <video class="video-card__player" preload="metadata" loop playsinline>
+                                    <source src="assets/videos/TV 1---3.mp4" type="video/mp4">
+                                </video>
+                                <div class="video-card__overlay">
+                                    <div class="showreel__play">
+                                        <svg viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="video-card__title">Retro TV</h3>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================= CONTACT PAGE ========================= -->
+    <main class="page" id="page-contact">
+        <section class="contact-page">
+            <div class="container">
+                <div class="contact__grid">
+
+                    <!-- Left Side -->
+                    <div class="contact__left animate-on-scroll">
+                        <h1 class="contact__heading">
+                            Let's collaborate on your next visual project.
+                        </h1>
+                        <p class="contact__subtext">
+                            I'm currently available for freelance opportunities, project collaborations, or just a good conversation about design and code.
+                        </p>
+
+                        <div class="contact__info-block">
+                            <p class="contact__info-label">Email</p>
+                            <p class="contact__info-value">ashabulfikri20@gmail.com</p>
+                        </div>
+
+                        <div class="contact__info-block">
+                            <p class="contact__info-label">Socials</p>
+                            <div class="contact__socials">
+                                <a href="#" id="social-artstation">ArtStation</a>
+                                <a href="#" id="social-behance">Behance</a>
+                                <a href="#" id="social-linkedin">LinkedIn</a>
+                                <a href="#" id="social-github">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side - Form -->
+                    <form class="contact__form animate-on-scroll" id="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell me about your project..." rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn--submit" id="btn-submit">
+                            Send Message
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                            </svg>
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================= FOOTER ========================= -->
+    <footer class="footer">
+        <div class="container">
+            <span class="footer__logo">FIKRI</span>
+            <span class="footer__copy">&copy; 2024 Ashabul Fikri. Built with precision.</span>
+            <div class="footer__links">
+                <a href="#" id="footer-artstation">ArtStation</a>
+                <a href="#" id="footer-behance">Behance</a>
+                <a href="#" id="footer-linkedin">LinkedIn</a>
+                <a href="#" id="footer-github">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================= JAVASCRIPT ========================= -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ismail - Projects</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#e5e2e1",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "surface-variant": "#353534",
+                        "secondary-fixed-dim": "#c6c6c6",
+                        "on-tertiary-container": "#452000",
+                        "tertiary-container": "#d97721",
+                        "on-primary": "#1000a9",
+                        "secondary": "#c6c6c6",
+                        "tertiary": "#ffb783",
+                        "primary-fixed": "#e1e0ff",
+                        "on-primary-container": "#0d0096",
+                        "inverse-on-surface": "#313030",
+                        "on-surface": "#e5e2e1",
+                        "background": "#131313",
+                        "on-primary-fixed-variant": "#2f2ebe",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-fixed": "#ffdcc5",
+                        "on-secondary-fixed-variant": "#454747",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface": "#131313",
+                        "secondary-container": "#454747",
+                        "on-primary-fixed": "#07006c",
+                        "primary-container": "#8083ff",
+                        "surface-container-low": "#1c1b1b",
+                        "on-secondary": "#2f3131",
+                        "surface-container": "#201f1f",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "error-container": "#93000a",
+                        "surface-container-high": "#2a2a2a",
+                        "on-surface-variant": "#c7c4d7",
+                        "on-tertiary-fixed-variant": "#703700",
+                        "primary": "#c0c1ff",
+                        "on-secondary-container": "#b5b5b5",
+                        "tertiary-fixed-dim": "#ffb783",
+                        "outline": "#908fa0",
+                        "outline-variant": "#464554",
+                        "inverse-surface": "#e5e2e1",
+                        "on-tertiary": "#4f2500",
+                        "surface-container-highest": "#353534",
+                        "surface-tint": "#c0c1ff",
+                        "inverse-primary": "#494bd6",
+                        "surface-bright": "#393939",
+                        "error": "#ffb4ab",
+                        "surface-dim": "#131313",
+                        "secondary-fixed": "#e2e2e2",
+                        "on-tertiary-fixed": "#301400",
+                        "on-error": "#690005"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "unit": "8px",
+                        "section-gap": "120px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "display-lg-mobile": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-caps": ["JetBrains Mono"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/10 transition-all duration-300 ease-in-out">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20">
+<a class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tighter" href="#">ISMAIL</a>
+<div class="hidden md:flex gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1" href="#">Projects</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="font-label-caps text-label-caps px-4 py-2 bg-primary text-on-primary rounded hover:bg-primary-fixed transition-all duration-200">
+                Resume
+            </button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[120px] pb-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Header Section -->
+<header class="mb-[64px]">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-6">Featured Renders &amp; Animations</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">A curated collection of digital products, focusing on complex interfaces, robust engineering, and seamless user experiences.</p>
+</header>
+<!-- Projects Grid (Bento/Asymmetric style) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Project Card 1: Cyberpunk Environments -->
+<article class="group relative bg-[#1E1E1E] rounded-xl border border-white/10 overflow-hidden hover:border-white/20 transition-all duration-300 flex flex-col md:col-span-2">
+<div class="relative w-full h-[400px] md:h-[600px] bg-surface-container-high overflow-hidden">
+<img alt="Cyberpunk Environments visualization" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-out" data-alt="Cinematic 3D render of a futuristic cyberpunk city environment, highly detailed textures, volumetric lighting, Octane render style, 8k resolution, for a professional 3D artist portfolio hero section." src="https://lh3.googleusercontent.com/aida/ADBb0uibnj1IcuO5kGteND1OE6CQmHnjfMryFZ2ZhwmYGgVetjJAda-47U97Y2clBOCxbZte7m9Cpa1SSCFp1TAPhR4nXwwZ6ruCM_kvF_S3-bCiykJU8zloRAoDf-kxF47dy8g-gYLVV0dSbxwQVRSP7uEX107Ay27vxQpzO_DYQXCxEzS1y6PdzWbfxT1A4ZN7PJxGxBTq45bHbOwMySu0fSbW37kNB0N_ELrlrTCIZOiT0bV88DxKAhHt4g"/>
+<div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#1E1E1E] via-[#1E1E1E]/50 to-transparent opacity-80"></div>
+</div>
+<div class="absolute bottom-0 left-0 p-8 flex flex-col justify-end w-full md:w-1/2 h-full z-10">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-surface-container-highest text-secondary rounded-full font-label-caps text-label-caps border border-white/5">Octane Render</span>
+<span class="px-3 py-1 bg-surface-container-highest text-secondary rounded-full font-label-caps text-label-caps border border-white/5">Cinema 4D</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Cyberpunk Environments</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-md">Cinematic 3D render of a futuristic cyberpunk city environment, highly detailed textures, volumetric lighting, and intricate architectural designs.</p>
+<a class="inline-flex items-center text-primary font-label-caps text-label-caps group-hover:text-primary-fixed transition-colors" href="#">
+                            High-Res Render <span class="material-symbols-outlined ml-2 text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Project Card 2: Minimalist Architecture -->
+<article class="group relative bg-[#1E1E1E] rounded-xl border border-white/10 overflow-hidden hover:border-white/20 transition-all duration-300 flex flex-col">
+<div class="relative w-full h-[400px] bg-surface-container-high overflow-hidden">
+<img alt="Minimalist Architecture UI" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-out" data-alt="3D architectural visualization of a minimalist luxury villa at sunset, realistic lighting, high-quality materials, Unreal Engine 5 render style." src="https://lh3.googleusercontent.com/aida/ADBb0ujh8CLANDhRM8za-mxxLV0-7EYPfhajBErAOOEY6s7ZTajK-ow_LHXUJXCQX3Pypz5bdZyW67dP30WKEdwdJlsB3-wW965i4c1mDsrGk6Y4T5y3XbiXpz-pgQb0OK727_MHGAo4J_meBzbI8Ly7ihF75p2JZDb5L-guhOF-alknw5azSbgLKA2Ql8G8-ZLjefxPf4tY85D7xzw_UAq-Xe5au8_0OyFWXcME_zpOfhjlumpzI0X8KSHsOEM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1E1E1E] to-transparent opacity-80"></div>
+</div>
+<div class="absolute bottom-0 left-0 p-8 flex flex-col justify-end w-full h-full z-10">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-surface-container-highest text-secondary rounded-full font-label-caps text-label-caps border border-white/5">Unreal Engine 5</span>
+<span class="px-3 py-1 bg-surface-container-highest text-secondary rounded-full font-label-caps text-label-caps border border-white/5">ArchViz</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Minimalist Architecture</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-md">3D architectural visualization of a minimalist luxury villa at sunset, focusing on realistic lighting and high-quality materials.</p>
+<a class="inline-flex items-center text-primary font-label-caps text-label-caps group-hover:text-primary-fixed transition-colors" href="#">
+                            View Process <span class="material-symbols-outlined ml-2 text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Project Card 3: Abstract Motion Graphics -->
+<article class="group relative bg-[#1E1E1E] rounded-xl border border-white/10 overflow-hidden hover:border-white/20 transition-all duration-300 flex flex-col">
+<div class="relative w-full h-[400px] bg-surface-container-high overflow-hidden">
+<img alt="Abstract Motion Graphics concept" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-out" data-alt="Abstract 3D motion graphic render, metallic fluid shapes, iridescent colors, dark background, professional Houdini render." src="https://lh3.googleusercontent.com/aida/ADBb0uiLWQYLs0prW0EZN-8HjH_z9DAOPaMVlchLA0PVDGDLLLy0N-HJoA0h6cdZuM4EWfyrLNRzq1X8n4G33EFrsCoqqkQz5eCFrR1vOJfynjo873YMQ3UhlWSNaQi8k9NEpsTDF26GXDIHao5bOeMdIXrtgbtZH_IrdzNK9jznZmGwBR9FFEiZ8JTE36lHt8CEvW7h1NsnQkNagY2vio6Yr1ZGlTleJfPtW1pEkvBwk_jKJe5CsFFSwp_cEnc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1E1E1E] to-transparent opacity-80"></div>
+</div>
+<div class="absolute bottom-0 left-0 p-8 flex flex-col justify-end w-full h-full z-10">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-surface-container-highest text-secondary rounded-full font-label-caps text-label-caps border border-white/5">Houdini</span>
+<span class="px-3 py-1 bg-surface-container-highest text-secondary rounded-full font-label-caps text-label-caps border border-white/5">Redshift</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Abstract Motion Graphics</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-md">Abstract 3D motion graphic render featuring metallic fluid shapes, iridescent colors, and complex simulations.</p>
+<a class="inline-flex items-center text-primary font-label-caps text-label-caps group-hover:text-primary-fixed transition-colors" href="#">
+                            High-Res Render <span class="material-symbols-outlined ml-2 text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Project Card 4: High-Fidelity Character Design -->
+<article class="group relative bg-[#1E1E1E] rounded-xl border border-white/10 overflow-hidden hover:border-white/20 transition-all duration-300 flex flex-col md:col-span-2">
+<div class="relative w-full h-[400px] md:h-[600px] bg-surface-container-high overflow-hidden">
+<img alt="High-Fidelity Character Design visualization" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-out" data-alt="Close-up 3D character sculpt, high-fidelity skin textures, intricate armor details, dramatic studio lighting, ZBrush and Maya style render, professional 3D artist showcase." src="https://lh3.googleusercontent.com/aida/ADBb0uj3K7bd7xl4BYebTnRCl_aOUiQJ21oPfp-ZCyeARv6IK687RzERcZWbwqzOJgruQin1yVKtkX33XGGaRYnaSFcN5uyzm3jnM27qdf--7Uh3h1RLh6fDQjjHbExaekdrJDF9defRJoX-8kj30AxmRlr9p6Dwl_IdHkaGzPgh-a_5YkgKEfTVnnRxWT70UTN1Rbuj1ZOUHy0RqCQ-rBjt3LtTCWnGHREtJod3oTX9jxY2LjxGEvkuF-wnzw"/>
+<div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#1E1E1E] via-[#1E1E1E]/50 to-transparent opacity-80"></div>
+</div>
+<div class="absolute bottom-0 left-0 p-8 flex flex-col justify-end w-full md:w-1/2 h-full z-10">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-surface-container-highest text-secondary rounded-full font-label-caps text-label-caps border border-white/5">ZBrush</span>
+<span class="px-3 py-1 bg-surface-container-highest text-secondary rounded-full font-label-caps text-label-caps border border-white/5">Maya</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">High-Fidelity Character Design</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-md">Close-up 3D character sculpt showcasing high-fidelity skin textures, intricate armor details, and dramatic studio lighting.</p>
+<a class="inline-flex items-center text-primary font-label-caps text-label-caps group-hover:text-primary-fixed transition-colors" href="#">
+                            View Process <span class="material-symbols-outlined ml-2 text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</main>
+<!-- Footer Component -->
+<footer class="w-full bg-background border-t border-white/10 opacity-80 hover:opacity-100 transition-opacity mt-auto">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-0">
+<div class="font-headline-sm text-headline-sm text-on-surface">
+                ISMAIL
+            </div>
+<div class="font-body-md text-body-md text-on-surface-variant">
+                © 2024 Ismail. Built with precision.
+            </div>
+<div class="flex gap-6">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">GitHub</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+</body></html>
